@@ -1,0 +1,104 @@
+body {
+  background-color: #f4f6fc;
+  padding-top: 0.35em;
+}
+
+main {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+main div {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.2%;
+  border-right: #f4f6fc solid 4px;
+}
+
+h6 {
+  margin: 1em 0;
+  font-weight: 500;
+}
+
+h4 {
+  margin: 0;
+}
+
+.price {
+  background-color: #f4f6fc;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "number euro" "number month";
+  font-weight: 700;
+  border-radius: 40px;
+  padding: 10px 50px;
+  text-align: left;
+}
+
+.number {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: number;
+  margin: 0;
+  font-size: 50px;
+}
+
+.euro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: euro;
+  margin: 0;
+}
+
+.month {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: month;
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  color: #303ca5;
+  border-color: #303ca5;
+  border-radius: 5px;
+  width: 80%;
+  padding: 15px 0;
+}
+
+.comment {
+  color: #73829e;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  line-height: 1em;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5em 0;
+  -webkit-text-decoration: underline #73829e dotted 2px;
+          text-decoration: underline #73829e dotted 2px;
+}
+
+ul p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

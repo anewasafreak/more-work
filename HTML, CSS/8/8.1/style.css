@@ -1,0 +1,104 @@
+body {
+  background-color: #e0f2e9;
+  font-size: 0px;
+  padding: 30px;
+  display: inline-block;
+  color: #a17c6b;
+  width: 95vw;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+header,
+nav,
+div,
+footer {
+  background-color: #ceb5a7;
+}
+
+header p,
+nav a {
+  font-size: 20px;
+}
+
+header,
+nav {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px 0 20px 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+  color: #a17c6b;
+}
+
+div p {
+  text-align: center;
+}
+
+div {
+  padding: 20px;
+}
+
+div :nth-child(1) {
+  text-align: center;
+  padding-top: 0;
+}
+
+p:nth-child(2){
+  text-align: center;
+  padding: 0 39%;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+body > :nth-child(4){
+  display: inline-block;
+  box-sizing: border-box;
+background-color: aqua;
+}
+
+article {
+  display: inline-block;
+  box-sizing: border-box;
+  color: #a17c6b;
+}
+
+body > :nth-child(4) {
+ text-align: left;
+}
+
+article :nth-child(2) {
+  text-align: left;
+  display: inline-block;
+  width:75%;
+  padding: 0;
+}
+
+body > :nth-child(4) > :nth-child(1) {
+  background-color: #e0f2e9;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+}

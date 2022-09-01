@@ -1,0 +1,115 @@
+/* GOLABL CSS */
+
+:root {
+    --background:#6da0c7;
+    --item: #c9e1ee;
+    --text: #2F4858;
+    --highlight: #5635ba;
+    --highlight-lighter: #7581eb;
+}
+
+body {
+    background-color: var(--background);
+    font-family: sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+header {
+    background-color: var(--item);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--text) 1px 6px 10px -15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+img {
+    max-width: 30%;
+    padding: 15px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--highlight);
+    font-size: 30px;
+    padding-bottom: 30px;
+    transition: 300ms;
+}
+
+a:hover {
+    color: var(--highlight-lighter);
+    transition: 300ms;
+    transform: scale(105%);
+}
+
+/* a:active {
+    co
+} */
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+main {
+    background-color: var(--item);
+    margin: 20px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: var(--text) 1px 1px 15px -3px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+tr {
+    border-bottom: var(--background) 1px solid;
+}
+
+td, th {
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+/* DESKTOP CSS */
+
+@media only screen and (min-width: 769px) {
+    header {
+        flex-direction: row;
+        padding: 0 20%;
+    }
+
+    img {
+        width: 10%;
+    }
+    
+    nav {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    a {
+        text-align: right;
+        padding: 0 20px;
+        font-size: 25px;
+    }
+
+    main {
+        margin: 20px 20%;
+        border-radius: 5px;
+    }
+}

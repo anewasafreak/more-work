@@ -1,0 +1,13 @@
+section div img {
+    width:150px;
+    height:75px
+}
+
+section{
+    width: 50%;
+}
+
+body {
+    box-sizing: border-box;
+    display: inline-block;
+}

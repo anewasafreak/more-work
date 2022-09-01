@@ -1,0 +1,251 @@
+:root {
+  --mid: #82899f;
+  --dark: #253234;
+  --darker: #1a2628;
+  --darkest: #11191d;
+  --light: #ffffff;
+  --highlight: #09817d;
+  --darker-highlight: #05686f;
+  --dark-highlight: #024059;
+  --error: #da1021;
+  --darker-error: #c40714;
+  --dark-error: #951103;
+  --edit: #3a7d44;
+  --darker-edit: #205a2d;
+  --dark-edit: #11411f;
+}
+
+body {
+  background-color: var(--mid);
+  color: var(--dark);
+  font-family: sans-serif;
+}
+
+header {
+  background-color: var(--light);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--dark) 0px -6px 20px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+a {
+  padding-left: 15px;
+}
+
+header i:hover {
+  color: var(--darker-highlight);
+  transition: all 230ms;
+  transform: translateY(-1.5px);
+}
+
+header i:active {
+  color: var(--dark-highlight);
+  transform: translateY(2px);
+}
+
+.highlight,
+i {
+  will-change: transform;
+  color: var(--highlight);
+  transition: all 230ms;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.add-task,
+.edit-task {
+  background-color: var(--light);
+  padding: 40px;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: var(--dark) 0px 10px 20px -10px;
+}
+
+.input {
+  display: grid;
+  grid-template-areas: "text button";
+  grid-template-rows: 40px;
+  grid-template-columns: 75% 25%;
+}
+
+.add-task > input {
+  grid-area: "input";
+  border: var(--mid) 1px solid;
+  border-right: none;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: var(--light);
+  transition: all 230ms;
+}
+
+input:focus {
+  background-color: var(--mid);
+  transition: all 230ms;
+}
+
+button {
+  will-change: transform;
+  grid-area: "button";
+  background-color: var(--highlight);
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--light);
+  transition: all 230ms;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--darker-highlight);
+  transition: all 230ms;
+}
+
+button:active {
+  background-color: var(--dark-highlight);
+  transform: scale(95%);
+  color: var(--mid);
+}
+
+.error {
+  color: var(--error);
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  background-color: var(--light);
+  border-radius: 5px;
+  box-shadow: var(--dark) 0px 10px 20px -10px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+
+i {
+  width: 15px;
+  padding-right: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.incomplete {
+  visibility: hidden;
+}
+
+.fa-check-circle {
+  color: var(--edit);
+}
+
+.fa-edit {
+  color: var(--edit);
+  margin: 15px 0;
+}
+
+.fa-edit:hover {
+  color: var(--darker-edit);
+  transition: all 230ms;
+  transform: translateY(-1.5px);
+}
+
+.fa-edit:active {
+  color: var(--dark-edit);
+  transform: translateY(2px);
+}
+
+.fa-trash {
+  color: var(--error);
+}
+
+.fa-trash:hover {
+  color: var(--darker-error);
+  transition: all 230ms;
+  transform: translateY(-1.5px);
+}
+
+.fa-trash:active {
+  color: var(--dark-error);
+  transform: translateY(2px);
+}
+
+form {
+  width: 100%;
+}
+
+.edit {
+  display: block;
+  background-color: var(--highlight);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--light);
+  width: 100%;
+  padding: 7px;
+}
+
+.edit-task > p {
+  text-align: center;
+}
+
+form > p {
+  display: grid;
+  grid-template-columns: 33% 66%;
+}
+
+input[type="number"] {
+  border: none;
+}
+
+.back-to-task {
+  will-change: transform;
+  display: block;
+  background-color: var(--dark);
+  padding: 7px 5%;
+  border: none;
+  border-radius: 5px;
+  margin: 0 40%;
+  color: var(--light);
+  text-decoration: none;
+  transition: all 230ms;
+  text-align: center;
+}
+
+.back-to-task:hover {
+  transition: all 230ms;
+  transform: scale(105%);
+  background-color: var(--darker);
+}
+
+.back-to-task:active {
+  background-color: var(--darkest);
+  color: var(--mid);
+  transform: scale(95%);
+}
+
+::placeholder {
+  color:var(--dark);
+}
+
+.task-completion {
+  display: flex;
+  align-items: center;
+}

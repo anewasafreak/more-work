@@ -1,0 +1,125 @@
+/* GLOBAL CSS */
+
+:root {
+  --dark: #0b5563;
+  --mid: #5299d3;
+  --light: #dad7eb;
+  --highlight: #c60f7b;
+}
+
+body {
+  background-color: var(--mid);
+  padding: 0 10%;
+  color: var(--dark);
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  padding: 20px 0;
+}
+
+img {
+  width: 10%;
+  height: 100%;
+}
+
+nav {
+  background-color: var(--light);
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: var(--dark) 15px 15px 10px -15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-right: 20px;
+}
+
+main {
+  margin: 20px 0;
+  display: grid;
+  grid-template-rows: 1fr 0.7fr 0.7fr;
+  grid-template-areas:
+    "login content content content"
+    "help content content content"
+    "help content content content";
+  grid-gap: 20px;
+}
+
+div {
+  background-color: var(--light);
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: var(--dark) 15px 15px 10px -15px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.login {
+  grid-area: login;
+}
+
+.help {
+  grid-area: help;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  grid-area: content;
+}
+
+footer {
+  text-align: center;
+}
+
+/* MOBILE CSS */
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  header img {
+    width: 30%;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  a {
+    width: 100%;
+    padding: 20px 25px;
+    border-bottom: var(--mid) 1px solid;
+    margin: 0;
+    color: var(--highlight);
+    text-decoration: underline;
+  }
+
+  a:last-child {
+    border: none;
+  }
+
+  main {
+    display: block;
+  }
+
+  .login {
+    margin-bottom: 20px;
+  }
+
+  .help {
+    display: none;
+  }
+
+  footer {
+    margin-bottom: 10vh;
+  }
+}

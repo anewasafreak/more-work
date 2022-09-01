@@ -1,0 +1,368 @@
+// GLOBAL SCSS - MOBILE
+
+$highlight: #ff3998;
+$text-color: #555;
+$background: white;
+$button-border: 12.5px;
+$button-borderwidth: 190px;
+$button-borderheight: 75px;
+$buttonwidth: $button-borderwidth - $button-border;
+$buttonheight: $button-borderheight - $button-border;
+$table-background: #eee;
+$series-color: #ff8139;
+$link-color: #777;
+$comment: #999;
+$dark: #111;
+
+// HEADER
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.burger-particle {
+  flex-direction: column;
+  background-color: $text-color;
+  border-radius: 5px;
+  width: 20px;
+  height: 4px;
+  margin: 4px 0;
+}
+
+nav {
+  display: none;
+}
+
+// FIRST SECTION - FIRST SIGN UP ADVERT
+
+body {
+  font-family: sans-serif;
+  color: $dark;
+}
+
+p,
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.sign-up {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 4em 0 0 1em;
+
+  article {
+    width: 50%;
+    div {
+      background: linear-gradient(
+        to top right,
+        #ff487d,
+        #ff5242,
+        #ff8139,
+        #c6b169
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $button-borderwidth;
+      height: $button-borderheight;
+      border-radius: 40px;
+    }
+
+    h1 {
+      font-size: 2.7em;
+      font-weight: 900;
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+    color: $highlight;
+  }
+
+  div {
+    width: 50%;
+  }
+
+  img {
+    width: 500px;
+    transform: translate(-50px, -40px);
+  }
+}
+
+button {
+  height: $buttonheight;
+  background-color: $background;
+  border: none;
+  width: $buttonwidth;
+  padding: 0;
+  border-radius: 30px;
+}
+
+// SECOND SECTION - FREE NFT ADVERT
+
+.advert {
+  background-image: url("/egzaminas/assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -150px 0;
+  height: 100%;
+  padding: 100px 20px 10px 20px;
+  margin: 10vh 0;
+}
+
+// THIRD SECTION - COMPANIES
+.toggle {
+  display: none;
+}
+
+.companies {
+  display: grid;
+  grid-template-areas:
+    "boom blimp"
+    "qrco droplet";
+
+  img {
+    margin: 10px auto;
+  }
+
+  img:first-child {
+    width: 138px;
+    height: 42px;
+    object-fit: none;
+    object-position: 0;
+  }
+
+  
+  }
+
+
+// FOURTH SECTION - NFT AUCTION
+
+.auction {
+  margin: 20px;
+  a {
+    text-decoration: underline solid $text-color;
+  } 
+}
+
+.auction-showcase {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.auction-item {
+  display: grid;
+  width: fit-content;
+  margin: 20px 20px 20px 0;
+
+  table {
+    background-color: $table-background;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  tr:first-child {
+    text-transform: uppercase;
+    font-size: xx-small;
+
+    td {
+      padding-top: 10px;
+
+      &:first-child {
+        color: $series-color;
+      }
+
+      &:last-child {
+        color: $comment;
+      }
+    }
+  }
+
+  tr:last-child {
+    color: $comment;
+    font-size: x-small;
+    td {
+      padding-bottom: 10px;
+    }
+  }
+
+  td {
+    padding: 2.5px 20px;
+  }
+
+  td:nth-child(even) {
+    text-align: right;
+  }
+}
+
+// FIFTH SECTION - SECOND SIGN UP ADVERT
+
+#second-signup {
+  border-bottom: $table-background 2px solid;
+  border-top: $table-background 2px solid;
+  padding-top: 4em;
+  margin-bottom: 40px;
+
+  div:nth-child(2) {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  img {
+    position: relative;
+    width: 250px;
+    height: 566px;
+    left: 60px;
+    top: 100px;
+  }
+}
+
+// SIXTH SECTION - FOOTER
+
+footer {
+  padding: 0 20px;
+
+  .social-media-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+
+    a {
+      color: $comment;
+      padding-right: 20px;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+
+      a {
+        padding-bottom: 10px;
+        width: 100%;
+        color: $link-color;
+      }
+    }
+  }
+  h4 {
+    color: $text-color;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h5 {
+    font-weight: 500;
+    color: $comment;
+  }
+}
+
+// DESKTOP SCSS
+
+@media only screen and (min-width: 1024px) {
+
+  //DESKTOP HEADER
+
+  body {
+    padding: 2.5% 5%;
+  }
+
+
+  nav {
+    display: block;
+  }
+
+  header{
+    margin-bottom: 2.5%;
+    a {
+      font-size: small;
+      margin-left: 15px;
+
+      &:nth-child(4) {
+        color: $highlight;
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+
+  //FIRST DESKTOP SIGN UP
+
+  .sign-up {
+    div {
+      height: fit-content;
+    }
+    img {
+      width: 650px;
+      transform: translate(0, 0);
+    }
+  }
+
+  //DESKTOP FREE NFT ADVERT
+
+  .advert {
+    background-position: 0 0;
+    border-radius: 20px;
+    padding: 125px 0 40px 60px;
+    p {
+      color: $dark;
+    }
+  }
+
+  //DESKTOP COMPANIES
+.toggle {
+      display: block;
+    }
+
+  .companies {
+    display: flex;
+  }
+
+  //DESKTOP SECOND SIGN UP
+
+  #second-signup {
+    img {
+      left: 40%;
+    }
+  }
+
+  //DESKTOP FOOTER
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-header, .footer-links {
+      width: 50%;
+    }
+  
+    .footer-bottom {
+      width: 100%;
+      justify-content: space-between;
+     display: flex;
+    }
+  
+    .footer-links {
+      flex-wrap: nowrap;
+      div {
+        width: 25%;
+        height: fit-content;
+      }
+    }
+  }
+}

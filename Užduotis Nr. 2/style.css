@@ -1,0 +1,314 @@
+/* GLOBAL CSS */
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+:root {
+  --red: #ef523e;
+  --orange: #ff6348;
+  --black: #212529;
+  --white: #fff;
+  --header-bottom: #e4f1fb;
+  --cream: #fbd7b5;
+  --blue: #0d2661;
+  --cyan: #3c6382;
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.5s;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  color: var(--black);
+  width: 90%;
+  padding: 0 5%;
+  padding-top: 12px;
+  align-items: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: var(--header-bottom) 2px solid;
+  padding-bottom: 14px;
+}
+
+.contacts {
+  flex: 2;
+  display: flex;
+  justify-content: left;
+}
+
+.contacts p {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 22px 0;
+  width: 100%;
+}
+
+.header-bottom > img {
+  width: 169px;
+  height: 23px;
+}
+
+i {
+  color: var(--red);
+  padding: 2%;
+}
+
+nav > a {
+  color: var(--orange);
+  border: var(--orange) 1px solid;
+  width: 35px;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  align-self: center;
+  margin: 0 7px;
+}
+
+nav > a:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.nav > a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.nav > a:hover {
+  color: var(--orange);
+  transition: 0.5s;
+}
+
+button {
+  color: var(--white);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 22px;
+}
+
+h5 {
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--blue);
+}
+
+h3 {
+  color: var(--blue);
+}
+
+.top {
+  background-color: var(--cream);
+  padding: 170px 0;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.top-box {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.top-box > img {
+  width: 400px;
+  height: 410px;
+  animation: floating 2s ease-in-out infinite;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-box > img {
+  animation: floating 2s ease-in-out infinite;
+  max-width: 50%;
+}
+
+p {
+  font-weight: 100;
+  color: var(--cyan);
+}
+
+.bottom-box {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 95px 0;
+}
+
+article {
+  flex: 1;
+}
+
+h6 {
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+h2 {
+  color: var(--blue);
+}
+
+ul {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  color: var(--blue);
+  padding: 0;
+  height: 150px;
+}
+
+li {
+  height: 33%;
+}
+
+/* TABLET CSS */
+
+@media only screen and (max-width: 1023px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > a {
+    align-self: flex-start;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: var(--orange);
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .burger-part {
+    background-color: var(--white);
+    width: 30px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 5px;
+  }
+
+  .header-bottom > button {
+    display: none;
+  }
+
+  .top-box,
+  .bottom-box {
+    max-width: 600px;
+  }
+
+  .top-box > img {
+    width: 270px;
+    height: 288px;
+  }
+
+  .top {
+    padding: 80px 0;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  h3 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  h3 button {
+    max-width: fit-content;
+  }
+
+  .bottom-box img {
+    max-width: 200px;
+    max-height: 147px;
+  }
+}
+
+/* MOBILE CSS */
+
+@media only screen and (max-width: 768px) {
+  .header-top {
+    flex-flow: column;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .top-box {
+    text-align: center;
+    max-width: 300px;
+    flex-direction: column;
+  }
+
+  .bottom-box {
+    max-width: 300px;
+    flex-direction: column;
+    padding: 70px 0;
+  }
+
+  .bottom-box img {
+width: 100%;
+  }
+
+ul {
+  flex-flow: row wrap;
+}
+
+  li {
+width: 100%;
+height: fit-content;
+  }
+  
+  .readmore {
+    margin-top: 30px;
+  }
+}

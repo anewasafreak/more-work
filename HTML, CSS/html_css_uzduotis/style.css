@@ -1,0 +1,27 @@
+.row:nth-child(odd) > .col:nth-child(odd){
+background-color: black;
+color: white;
+}
+
+.row:nth-child(even) > .col:nth-child(even){
+background-color: black;
+color: white;
+}
+
+.mb-5.mt-5.second.container > .row > .col:nth-child(1){
+    background-color: aquamarine;
+}
+
+.mb-5.mt-5.second.container > .row > .col:nth-child(2){
+    background-color: beige;
+    color: black;
+}
+
+.mb-5.mt-5.second.container > .row > .col:nth-child(3){
+    background-color: rosybrown;
+}
+
+.mb-5.mt-5.second.container > .row > .col:nth-child(4){
+    background-color: crimson;
+    color: black;
+}

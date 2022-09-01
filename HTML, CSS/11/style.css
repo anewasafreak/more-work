@@ -1,0 +1,71 @@
+body {
+    padding: 0 250px;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: #B8CB20;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+img {
+    width: 10%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    height: 85vh;
+}
+
+.AboutUs {
+    width: 40%;
+    padding: 20px;
+}
+
+.WorkOfLine {
+    width: 60%;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.WorkOfLine > img {
+    width:55%;
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+button {
+    background-color: #B8CB20;
+    border: none;
+    padding:15px;
+    color: white;
+    float: right;
+}
+
+button:hover {
+    background-color: #7f950f;
+    color: rgb(236, 236, 236);
+}
+
+button:active {
+    background-color: #70860c;
+    color: rgb(226, 226, 226);
+}
+
+footer {
+    text-align: center;
+    color: #384004;
+    padding: 10px;
+}

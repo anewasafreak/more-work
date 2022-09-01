@@ -1,0 +1,13 @@
+/*nth-child gali priimti ir skaiciuka 1,2,3,4*/
+tbody tr :nth-child(odd) {
+    background-color: bisque;
+}
+tbody tr :nth-child(even) {
+    background-color: bisque;
+}
+tbody tr:first-child {
+    background-color: red;
+}
+tbody tr:last-child {
+    background-color: red;
+}
