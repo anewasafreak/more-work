@@ -22,15 +22,15 @@
 
 
 
-// let tempArray = [1,2,3,444,545,545,4,545345,647567,567,567,456,3445,345,345,3453,45345,45,456,456,456,23423,45,6467,64,47634,5345,345,345,34534,57,64647,345,3453,45345,3534,5364,5754,5443,53453,452354,325,45,45745,6345,345,345,345]
-//
-// function toCelsius(name) {
-//     console.log(name)
-// }
-// for (let i =0; i < tempArray.length; i++) {
-//     let result = toCelsius(tempArray[i])
-//     console.log(result)
-// }
+let tempArray = [1,2,3,444,545,545,4,545345,647567,567,567,456,3445,345,345,3453,45345,45,456,456,456,23423,45,6467,64,47634,5345,345,345,34534,57,64647,345,3453,45345,3534,5364,5754,5443,53453,452354,325,45,45745,6345,345,345,345]
+
+function toCelsius(name) {
+    console.log(name)
+}
+for (let i =0; i < tempArray.length; i++) {
+    let result = toCelsius(tempArray[i])
+    console.log(result)
+}
 
 
 // toCelsius('Vytenis')
