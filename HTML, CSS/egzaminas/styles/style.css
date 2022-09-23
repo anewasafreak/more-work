@@ -1,18 +1,11 @@
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 1em;
 }
 
 .burger-particle {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #555;
   border-radius: 5px;
   width: 20px;
@@ -37,54 +30,37 @@ a {
 
 .sign-up {
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow: hidden;
   margin: 4em 0 0 1em;
 }
-
 .sign-up article {
   width: 50%;
 }
-
 .sign-up article div {
-  background: -webkit-gradient(linear, left bottom, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
   background: linear-gradient(to top right, #ff487d, #ff5242, #ff8139, #c6b169);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 190px;
   height: 75px;
   border-radius: 40px;
 }
-
 .sign-up article h1 {
   font-size: 2.7em;
   font-weight: 900;
 }
-
 .sign-up h6 {
   text-transform: uppercase;
   color: #ff3998;
 }
-
 .sign-up div {
   width: 50%;
 }
-
 .sign-up img {
   width: 500px;
-  -webkit-transform: translate(-50px, -40px);
-          transform: translate(-50px, -40px);
+  transform: translate(-50px, -40px);
 }
 
 button {
@@ -111,15 +87,12 @@ button {
 }
 
 .companies {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "boom blimp" "qrco droplet";
+  grid-template-areas: "boom blimp" "qrco droplet";
 }
-
 .companies img {
   margin: 10px auto;
 }
-
 .companies img:first-child {
   width: 138px;
   height: 42px;
@@ -132,70 +105,54 @@ button {
 .auction {
   margin: 20px;
 }
-
 .auction a {
   -webkit-text-decoration: underline solid #555;
           text-decoration: underline solid #555;
 }
 
 .auction-showcase {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .auction-item {
-  display: -ms-grid;
   display: grid;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 20px 20px 20px 0;
 }
-
 .auction-item table {
   background-color: #eee;
   width: 100%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
 .auction-item tr:first-child {
   text-transform: uppercase;
   font-size: xx-small;
 }
-
 .auction-item tr:first-child td {
   padding-top: 10px;
 }
-
 .auction-item tr:first-child td:first-child {
   color: #ff8139;
 }
-
 .auction-item tr:first-child td:last-child {
   color: #999;
 }
-
 .auction-item tr:last-child {
   color: #999;
   font-size: x-small;
 }
-
 .auction-item tr:last-child td {
   padding-bottom: 10px;
 }
-
 .auction-item td {
   padding: 2.5px 20px;
 }
-
 .auction-item td:nth-child(even) {
   text-align: right;
 }
@@ -206,12 +163,10 @@ button {
   padding-top: 4em;
   margin-bottom: 40px;
 }
-
 #second-signup div:nth-child(2) {
   margin-bottom: 40px;
   position: relative;
 }
-
 #second-signup img {
   position: relative;
   width: 250px;
@@ -223,52 +178,37 @@ button {
 footer {
   padding: 0 20px;
 }
-
 footer .social-media-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
   text-align: left;
 }
-
 footer .social-media-icons a {
   color: #999;
   padding-right: 20px;
 }
-
 footer .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
-
 footer .footer-links div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 50%;
 }
-
 footer .footer-links div a {
   padding-bottom: 10px;
   width: 100%;
   color: #777;
 }
-
 footer h4 {
   color: #555;
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 footer h5 {
   font-weight: 500;
   color: #999;
@@ -301,8 +241,7 @@ footer h5 {
   }
   .sign-up img {
     width: 650px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   .advert {
     background-position: 0 0;
@@ -316,35 +255,25 @@ footer h5 {
     display: block;
   }
   .companies {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #second-signup img {
     left: 40%;
   }
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   footer .footer-header, footer .footer-links {
     width: 50%;
   }
   footer .footer-bottom {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: space-between;
     display: flex;
   }
   footer .footer-links {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   footer .footer-links div {
     width: 25%;
@@ -352,5 +281,4 @@ footer h5 {
     height: -moz-fit-content;
     height: fit-content;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
