@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  padding: 2% 5%;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #e2ecec;
+  color: #ad251e;
+  width: calc(31% - 40px);
+  min-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  padding: 5px 20px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+::placeholder {
+  color: #ad251e;
+  opacity: 50%;
+}
+
+input {
+  color: #370301;
+  background-color: #e2ecec;
+  margin: 0.5%;
+  width: 200px;
+}
+
+.card > span {
+  font-weight: 700;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

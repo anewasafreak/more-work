@@ -18,6 +18,7 @@ function logEndPoint() {
     .then((x) => x.json()) //man atrodo cia paima is linko visa array
     .then((data) => {
       document.getElementById("output").innerText = ""
+      document.getElementById("btn").style.display = "none";
       for (let i = 0; i < data.entries.length; i++) {
         let mainDiv = document.getElementById("output");
 

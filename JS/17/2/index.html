@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- <form>
       <input type="text" id="fullname" placeholder="full name" />
       <input type="submit" value="Add your name to the table" />
     </form>
@@ -17,7 +20,18 @@
         <th>Name</th>
         <th>Surname</th>
       </tr>
-    </table>
-    <script src="script.js"></script>
-  </body>
+    </table> -->
+
+  <form>
+    <input type="text" id="car-brand" placeholder="car brand"><br>
+    <input type="text" id="model" placeholder="car model"><br>
+    <input type="number" id="mileage" placeholder="mileage" min="1"><br>
+    <input type="number" id="price" placeholder="price" min="1"><br>
+    <input type="url" id="image" placeholder="image"><br>
+    <input type="submit" value="Add car">
+  </form>
+  <div id="wrapper"></div>
+  <script src="script.js"></script>
+</body>
+
 </html>
