@@ -85,8 +85,85 @@ loadInfo();
 document.querySelector("form").addEventListener("submit", getInfo); */
 
 // ====== EX.3 ======
-function createPerson() {
+let users = [];
 
+function loadTable() {
+  let localStorageUsers = JSON.parse(localStorage.getItem("users"));
+
+  if (localStorage.length > 0) {
+    for (let i = 0; i < localStorageUsers.length; i++) {
+      let tr = document.createElement("tr");
+      let nameTd = document.createElement("td");
+      let surnameTd = document.createElement("td");
+      nameTd.innerText = localStorageUsers[i].name;
+      surnameTd.innerText = localStorageUsers[i].surname;
+      tr.append(nameTd);
+      tr.append(surnameTd);
+      document.querySelector("table").append(tr);
+    }
+
+    console.log(localStorageUsers);
+  }
 }
 
-document.querySelector("form").addEventListener("submit", createPerson);
+loadTable();
+
+function addToTable(name, surname) {
+  let localStorageUsers = JSON.parse(localStorage.getItem("users"));
+
+  let tr = document.createElement("tr");
+  let nameTd = document.createElement("td");
+  let surnameTd = document.createElement("td");
+  nameTd.innerText = name;
+  surnameTd.innerText = surname;
+  tr.append(nameTd);
+  tr.append(surnameTd);
+  document.querySelector("table").append(tr);
+}
+
+class Person {
+  constructor(name, surname) {
+    this.name = name;
+    this.surname = surname;
+  }
+}
+
+function addPersonToList(event) {
+  event.preventDefault();
+
+  let fullNameArray = document
+    .getElementById("fullname")
+    .value.trim()
+    .split(" ")
+    .map((text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase());
+
+  let name = fullNameArray.shift();
+
+  let surname = fullNameArray
+    .map(
+      (text) =>
+        text.charAt(0).toUpperCase() + text.slice(1).toLowerCase().trim()
+    )
+    .filter((text) => {
+      return text !== "";
+    })
+    .toString()
+    .replace(/,/g, " ");
+
+  let fullName = {
+    name: name,
+    surname: surname,
+  };
+
+  if (localStorage > 0) {
+    users.push(JSON.parse(localStorage.getItem("users")));
+  }
+
+  users.push(fullName);
+
+  localStorage.setItem("users", JSON.stringify(users));
+
+  addToTable(name, surname);
+}
+
+document.querySelector("form").addEventListener("submit", addPersonToList);
