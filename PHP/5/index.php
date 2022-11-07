@@ -79,7 +79,7 @@ textReplicator('some_text', null);
 Funkcija grąžina: 'some_text'
 */
 
-function textReplicator(string $text, int $times): string {
+function textReplicator(string $text, ?int $times): string {
     $fullText = $text;
     for($i = 0; $i < $times - 1; $i++) {
        $fullText = $fullText .'-' . $text;
@@ -89,13 +89,13 @@ function textReplicator(string $text, int $times): string {
 };
 
 echo textReplicator("greetings", 3) . PHP_EOL;
-// echo textReplicator("greetings", null) . PHP_EOL;
+echo textReplicator("greetings", null) . PHP_EOL;
 
 /*
 6. Paverskite funkciją 'textReplicator', į veikiančią anoniminę funkciją.
 */
 
-$textReplicator = function(string $text, int $times): string {
+$textReplicator = function(string $text, ?int $times): string {
     $fullText = $text;
     for($i = 0; $i < $times - 1; $i++) {
        $fullText = $fullText .'-' . $text;
