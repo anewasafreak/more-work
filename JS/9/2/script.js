@@ -3,14 +3,14 @@
 // ========= MANIPULATING DOM STYLE =========
 
 // ====== EX. 1 ======
-// document.querySelector('h1').addEventListener('click', changeNamePosition)
+document.querySelector('h1').addEventListener('click', changeNamePosition)
 
-// function changeNamePosition(n) {
-//     n.target.style = 'font-size: 4em; text-align:center; color:red;'
-// }
+function changeNamePosition(n) {
+    n.target.style = 'font-size: 4em; text-align:center; color:red; margin:44vh'
+}
 
 // ====== EX. 2-3 ======
-// let before = document.querySelector('button').style = "position:absolute; top: 0; left:0";
+let before = document.querySelector('button').style = "position:absolute; top: 0; left:0";
 // let OGposition = true
 
 // document.querySelector('button').addEventListener('click', changePosition)
