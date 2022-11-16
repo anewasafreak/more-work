@@ -176,4 +176,4 @@ function exercise9($date): void
     */
 }
 
-print_r(date());
+// print_r(date());
