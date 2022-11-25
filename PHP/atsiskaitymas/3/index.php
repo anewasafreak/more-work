@@ -67,19 +67,29 @@ function exercises3($holidaysList)
 
     function super_unique($array, $key)
     {
-       $temp_array = [];
-       foreach ($array as &$v) {
-           if (!isset($temp_array[$v[$key]]))
-           $temp_array[$v[$key]] =& $v;
-       }
-       $array = array_values($temp_array);
-       return $array;
+        $temp_array = [];
+        foreach ($array as &$v) {
+            if (!isset($temp_array[$v[$key]]))
+                $temp_array[$v[$key]] = & $v;
+        }
+        $array = array_values($temp_array);
+        return $array;
 
     }
 
-    $newHolidays = super_unique($allHolidays, 'destination');
+    $allHolidays = super_unique($allHolidays, 'destination');
+
+    foreach ($allHolidays as $key => $holidays) {
+        echo 'Destination ' . $holidays['destination'] . PHP_EOL;
+        echo 'Titles: ' . $holidays['titles'] . PHP_EOL;
+        echo 'Total: ' . $holidays['total'] . PHP_EOL;
+
+        $array_keys = array_keys($allHolidays);
+        if (end($array_keys) !== $key) {
+            echo '************' . PHP_EOL;
+        }
+    }
     ;
-    print_r($newHolidays);
 }
 
 exercises3($holidays);
