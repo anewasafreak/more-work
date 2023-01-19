@@ -22,3 +22,14 @@ $newCustomerOrderProcessor = new OrderProcessor($newCustomerCalculator);
 $standardOrderProcessor->addItem($ticket1);
 $standardOrderProcessor->addItem($ticket2);
 $standardOrderProcessor->addItem($ticket3);
+echo $standardOrderProcessor->calculatePrice() . " - standartinio užsakymo kaina" . PHP_EOL;
+
+$subscriberOrderProcessor->addItem($ticket1);
+$subscriberOrderProcessor->addItem($ticket2);
+$subscriberOrderProcessor->addItem($ticket3);
+echo $subscriberOrderProcessor->calculatePrice() . " - prenumerato užsakymo kaina" . PHP_EOL;
+
+$newCustomerOrderProcessor->addItem($ticket1);
+$newCustomerOrderProcessor->addItem($ticket2);
+$newCustomerOrderProcessor->addItem($ticket3);
+echo $newCustomerOrderProcessor->calculatePrice() . " - naujo pirkėjo užsakymo kaina" . PHP_EOL;
